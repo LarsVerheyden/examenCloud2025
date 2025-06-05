@@ -13,5 +13,5 @@ jobs:
       - name: Update diagram
         uses: actions/download-artifact@v4
         with:
-          name: "test.txt"
+          name: "diagram"
           path: "./downloads"

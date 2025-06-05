@@ -13,5 +13,5 @@ jobs:
       - name: Update diagram
         uses: actions/download-artifact@v4
         with:
-          name: "diagram"
+          name: "${{ steps.make_diagram.outputs.svg }}"
           path: "./downloads"

@@ -19,5 +19,5 @@ jobs:
       - name: Get artifact
         uses: actions/download-artifact@v4
         with:
-          name: "${{ steps.make_diagram.outputs.svg }}"
+          name: "my-diagram"
           path: "./downloads"

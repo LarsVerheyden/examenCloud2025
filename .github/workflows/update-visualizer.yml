@@ -4,6 +4,8 @@ jobs:
   my_job:
     runs-on: ubuntu-latest
     steps:
+      - name: Repo Visualizer
+        uses: githubocto/repo-visualizer@0.9.1
       - name: Update diagram
         id: make_diagram
         uses: githubocto/repo-visualizer@0.7.1

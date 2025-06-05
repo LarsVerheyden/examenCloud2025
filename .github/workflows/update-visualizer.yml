@@ -4,10 +4,6 @@ jobs:
   my_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Repo Visualizer
-        uses: githubocto/repo-visualizer@0.9.1
-      - name: Check out repository code
-        uses: actions/checkout@v4
       - name: Update diagram
         id: make_diagram
         uses: githubocto/repo-visualizer@0.7.1
@@ -17,7 +13,8 @@ jobs:
       - name: Get artifact
         uses: actions/download-artifact@v2
         with:
-              name: "my-diagram"
-              path: "downloads.txt"
+          name: "my-diagram"
+          path: "downloads"
+              
 
       

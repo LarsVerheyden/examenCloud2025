@@ -21,3 +21,4 @@ jobs:
         with:
           name: "${{ steps.make_diagram.outputs.svg }}"
           path: "downloads"
+          should_push: false

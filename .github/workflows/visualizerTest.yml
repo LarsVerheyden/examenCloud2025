@@ -18,5 +18,4 @@ jobs:
           artifact_name: "my-diagram"
       - name: Get artifact
         uses: actions/download-artifact@v4
-        with:
-          should_push: false
+         should_push:false
